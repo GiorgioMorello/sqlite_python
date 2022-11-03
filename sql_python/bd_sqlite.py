@@ -6,17 +6,20 @@ conexao = sqlite3.connect('base_dados.db')
 # Temos que criar um cursor, ele que vai executar os comandos sql no banco de dados
 cursor = conexao.cursor()
 
+
+
+"""
 # Criar uma tabela
-#cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
-#               'id INTEGER PRIMARY KEY AUTOINCREMENT,'
-#               'nome TEXT,'
-#               'peso REAL'
-#               ')')
+cursor.execute('CREATE TABLE IF NOT EXISTS clientes ('
+               'id INTEGER PRIMARY KEY AUTOINCREMENT,'
+               'nome TEXT,'
+               'peso REAL'
+               ')')
 
 
 # Inserir um registro na tebela
 # Códigos usados pra se previnir contra ataques SQL-injection
-"""
+
 1- cursor.execute('INSERT INTO clientes (nome, peso) VALUES (?, ?)', ('Felipe', 63.3))
 
 
