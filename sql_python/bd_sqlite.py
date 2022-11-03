@@ -1,6 +1,6 @@
 import sqlite3
 
-# Vamos criar uma conexão persistente para salvar os dados mesmo quando sairmos do projeto
+# Criando uma conexão persistente para salvar os dados mesmo quando sairmos do projeto
 conexao = sqlite3.connect('base_dados.db')
 
 # Temos que criar um cursor, ele que vai executar os comandos sql no banco de dados
